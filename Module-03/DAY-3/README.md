@@ -23,25 +23,35 @@ To Create a java program use replace() method replaces the given String from the
  ```
 /*
 Program to implement a String Builder using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Rajkiran J
+RegisterNumber: 212222043006
 */
 ```
 
 ## Sourcecode.java:
+```
+import java.util.Scanner;
 
+public class StringBuilderAppend {
 
+public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    String input = scanner.nextLine();
+    scanner.close();
 
+    StringBuilder sb1 = new StringBuilder(input); // Initialize with input
+    sb1.append("s");
 
-
-
-
+    System.out.println("sb1 = " + sb1.toString());
+}
+}
+```
 ## OUTPUT:
 
+<img width="396" height="133" alt="443228334-a4d4c276-cb4b-497b-9c75-2ec65537a593" src="https://github.com/user-attachments/assets/4f5317cc-a5f8-43d5-8e9f-dd75fff6406e" />
 
 
 ## RESULT:
 Thus the java program use replace() method replaces the given String from the specified beginIndex and endIndex and use stringbuilder was executed successfully.
-
 
 
