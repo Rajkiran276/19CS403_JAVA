@@ -1,38 +1,64 @@
-# Ex.No:3(E)  STRINGBUILDER OBJECT REFERENCE IN JAVA
+# Ex.No:2(E)  SMALLEST ELEMENT IN AN ARRAY
 
 ## AIM:
-To write a Java program that creates a StringBuilder object using a given string and assigns its reference to the variable sb.
-
+To write a Java program that reads an array size and elements from the user and then finds and prints the smallest element in the array.
 ## ALGORITHM :
 1.	Start the program.
-2.	Declare and initialize a string variable str1.
-3.	Create a StringBuilder object by passing str1 to its constructor.
-4.	Store the object reference in the variable sb.
-5.	Print the contents of sb to verify the output.
-6.	End the program.
-
+2.	Read the size of the array from the user.
+3.	Declare an array of the given size.
+4.	Read the array elements from the user.
+5.	Initialize a variable min with the first element of the array.
+6.	Traverse the array using a loop.
+7.	Compare each element with min. If an element is smaller, update min.
+8.	After the loop ends, print the smallest number.
+9.	End the program.
+	
 
 ## PROGRAM:
  ```
 /*
-Program to implement a StringBuilder Object Reference in Java
-Developed by: 
-RegisterNumber:  
+Program to implement a Smallest Element in an Array
+Developed by: Rajkiran J
+RegisterNumber: 212222043006
 */
 ```
 
 ## Sourcecode.java:
+```
+import java.util.Scanner;
 
+public class LargestElement {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        int size = scanner.nextInt();
+        int[] array = new int[size];
 
+        for (int i = 0; i < size; i++) {
+            array[i] = scanner.nextInt();
+        }
 
+        int largest = array[0]; // Assume the first element is the largest initially
 
+        for (int i = 1; i < size; i++) {
+            if (array[i] > largest) {
+                largest = array[i];
+            }
+        }
 
+        System.out.println("The largest element in the array is: " + largest);
 
+        scanner.close();
+    }
+}
+```
 ## OUTPUT:
+<img width="759" height="254" alt="439809431-7bb0f0a3-f60f-4e0a-ab84-8e9e3d8bc429" src="https://github.com/user-attachments/assets/0ce8fc21-1114-4371-9ba6-95bc5ee22241" />
 
 
 
 ## RESULT:
-Thus the  Java program successfully creates a StringBuilder object using the given string and stores the reference in the variable sb. The contents of the object are printed using the reference variable.
+Thus the java program successfully reads the array size and elements from the user and correctly finds and prints the smallest number in the array.
+
+
 
